@@ -1,0 +1,44 @@
+version: "2.4"
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    restart: unless-stopped
+    #mem_limit: 9G
+    volumes:
+      - ./minecraft-sync/config:/config
+      - ./minecraft-sync/mods:/mods
+      - ./mods.txt:/extras/mods.txt
+      - ./minecraft-data:/data
+    environment:
+      #- UID=1000
+      #- GID=1000
+
+      #- EULA=true
+      - MEMORY=4G
+
+      - VERSION=1.19.2
+      - TYPE=fabric
+      - PACKWIZ_URL=https://sub.nyamura.me/modpack/packwiz/pack.toml
+      - MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES=false
+      - MODRINTH_ALLOWED_VERSION_TYPE=beta
+      - MODRINTH_PROJECTS=gotta-go-fast-fabric,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
+      - MODS_FILE=/extras/mods.txt
+
+      - REPLACE_ENV_VARIABLE_PREFIX=MCCFG_
+      - MCCFG_SIMPLEVOICECHAT_VOICE_HOST=
+
+      # server.properties
+      - ENFORCE_SECURE_PROFILE=false
+      #- ONLINE_MODE=false
+      - SYNC_CHUNK_WRITES=false
+      - ENABLE_COMMAND_BLOCKS=true
+      - "MOTD=\\u00A7d\\u00A7lNyamura Sub Server\\u00A7r\\n     \\u00A7eSeason 2"
+      - DIFFICULTY=normal
+      - SPAWN_PROTECTION=0
+      #- ENABLE_WHITELIST=true
+      #- "SEED=0"
+
+    ports:
+      - "25565:25565"
+      - "24454:24454/udp" # SimpleVoiceChat
+
