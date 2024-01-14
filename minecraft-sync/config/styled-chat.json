@@ -12,26 +12,26 @@
     "require_for_formatting": false
   },
   "auto_completion": {
-    "tags": false,
+    "tags": true,
     "tag_aliases": false,
-    "emoticons": false
+    "emoticons": true
   },
   "default": {
-    "display_name": "${default}",
+    "display_name": "<gray>${vanillaDisplayName}</gray>",
     "message_formats": {
-      "chat": "<gray>${player}:</gray> ${message}",
-      "joined_the_game": "<yellow><lang:multiplayer.player.joined:'${player}'></yellow>",
+      "chat": "${player} <dark_gray>»</dark_gray> ${message}",
+      "joined_the_game": "<dark_grey>[<green>+</green>]</dark_grey> ${player}",
       "joined_after_name_change": "<yellow><lang:multiplayer.player.joined.renamed:'${player}':'${old_name}'></yellow>",
       "joined_for_first_time": "<yellow><lang:multiplayer.player.joined:'${player}'></yellow>",
-      "left_game": "<yellow><lang:multiplayer.player.left:'${player}'></yellow>",
+      "left_game": "<dark_gray>[<red>-</red>]</dark_gray> ${player}",
       "base_death": "${default_message}",
       "advancement_task": "<lang:chat.type.advancement.task:'${player}':'${advancement}'>",
       "advancement_challenge": "<lang:chat.type.advancement.challenge:'${player}':'${advancement}'>",
       "advancement_goal": "<lang:chat.type.advancement.goal:'${player}':'${advancement}'>",
       "sent_team_chat": "<lang:'chat.type.team.sent':'<hover\\:\\'<lang\\:chat.type.team.hover>\\'><suggest_command\\:\\'/teammsg \\'>${team}':'${displayName}':'${message}'>",
       "received_team_chat": "<lang:'chat.type.team.text':'<hover\\:\\'<lang\\:chat.type.team.hover>\\'><suggest_command\\:\\'/teammsg \\'>${team}':'${displayName}':'${message}'>",
-      "sent_private_message": "<gray><italic><lang:commands.message.display.outgoing:'${receiver}':'${message}'>",
-      "received_private_message": "<gray><italic><lang:commands.message.display.incoming:'${sender}':'${message}'>",
+      "sent_private_message": "<dark_gray>[<green>You</green> → ${receiver}] »<reset> ${message}",
+      "received_private_message": "<dark_gray>[${sender} → <green>You</green>] »<reset> ${message}",
       "say_command": "[${player}] ${message}",
       "me_command": "<lang:'chat.type.emote':'${player}':'${message}'>",
       "pet_death": "${default_message}"
@@ -60,7 +60,8 @@
       "dark_aqua": true,
       "dark_gray": true,
       "spoiler": true,
-      "strikethrough": true
+      "strikethrough": true,
+      "rainbow": true
     },
     "emoticons": {
       "potion": "🧪",
@@ -79,5 +80,6 @@
       "table": "(╯°□°）╯︵ ┻━┻"
     }
   },
-  "styles": []
+  "styles": [
+  ]
 }

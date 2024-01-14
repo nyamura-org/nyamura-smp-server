@@ -1,0 +1,8 @@
+# Show vanish status in the action bar
+action-bar=true
+# Prevents vanished players from using chat
+disable-chat=false
+# Hide vanished players from entities, prevents hostile entities from targeting players, and more
+hide-from-entities=true
+# Text to be displayed when placeholder vanish:vanished is used for a vanished player
+place-holder-display=" <gray>☠"

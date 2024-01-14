@@ -3,7 +3,7 @@ services:
   minecraft:
     image: itzg/minecraft-server
     restart: unless-stopped
-    #mem_limit: 9G
+    mem_limit: 12G
     volumes:
       - ./minecraft-sync/config:/config
       - ./minecraft-sync/mods:/mods
@@ -14,14 +14,14 @@ services:
       #- GID=1000
 
       #- EULA=true
-      - MEMORY=4G
+      - MEMORY=8G
 
       - VERSION=1.19.2
       - TYPE=fabric
-      - PACKWIZ_URL=https://sub.nyamura.me/modpack/packwiz/pack.toml
-      - MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES=false
+      - PACKWIZ_URL=https://raw.githubusercontent.com/nyamura-org/nyampack/main/pack.toml
+      - MODRINTH_DOWNLOAD_DEPENDENCIES=none
       - MODRINTH_ALLOWED_VERSION_TYPE=beta
-      - MODRINTH_PROJECTS=gotta-go-fast-fabric,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
+      - MODRINTH_PROJECTS=gotta-go-fast-fabric,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth,timeoutout,yawp,owo-lib:yGLYmVnT
       - MODS_FILE=/extras/mods.txt
 
       - REPLACE_ENV_VARIABLE_PREFIX=MCCFG_

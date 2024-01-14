@@ -1,5 +1,13 @@
-# better-fabric-console.584778;worldedit.225608;smooth-chunk-save.582327
-https://mediafilez.forgecdn.net/files/4119/936/better-fabric-console-mc1.19.2-1.1.2.jar
+
+# https://www.curseforge.com/minecraft/mc-mods/better-fabric-console
+#https://mediafilez.forgecdn.net/files/4119/936/better-fabric-console-mc1.19.2-1.1.2.jar
+
+# https://www.curseforge.com/minecraft/mc-mods/worldedit
 https://mediafilez.forgecdn.net/files/3922/622/worldedit-mod-7.2.12.jar
-https://mediafilez.forgecdn.net/files/3912/883/smoothchunk-fabric-1.19.1-2.0.jar
+
+# https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save
+https://mediafilez.forgecdn.net/files/4748/795/smoothchunk-fabric-1.19.2-3.2.jar
+
+# https://www.curseforge.com/minecraft/mc-mods/advancements-debug
+https://mediafilez.forgecdn.net/files/3345/570/advdebug-2.3.0.jar
 

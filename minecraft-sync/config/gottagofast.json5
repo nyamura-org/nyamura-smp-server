@@ -1,0 +1,7 @@
+{
+	"hideConsoleWarnings": false,
+	"playerLimit": 250.0,
+	"playerFallFlyingLimit": 300.0,
+	"vehicleLimit": 100.0,
+	"vehicleDistanceLimit": 0.0625
+}
